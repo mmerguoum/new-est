@@ -5,12 +5,12 @@
     color: $white;
     padding: 12px 30px;
     font-size: 13px;
-    margin-top: 4%;
+    margin-top: 2%;
 }
 %mrg{
     margin-top: 3%;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 35px;
 
 }
 %span{
@@ -33,28 +33,29 @@
         .BOX{
             background-color: $seconde-color;
             display: flex;
-            justify-content: space-around;
+            
             width: 100%;
             margin: 0 auto;
             // height: 540px;
             .BOX1{
                 width: 45%;
+                
                 img{
                     width: 100%;
-                    margin: -4px 0;
+                    
                 }
                 
             }
             .BOX2{
                 width: 45%;
-                padding:0 5%;
+                padding:0 4%;
                 
                 .titre{
                     margin-top: 5%;
                 }
                 h1{
                     font-size: 40px;
-                    line-height: 36px;
+                    line-height: 45px;
                     
                 }
                 .paragraphe, .par1, .par2{
@@ -71,7 +72,7 @@
 
  
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 700px){
     .cont-1{
         width: 100%; 
       .BOX{
@@ -90,6 +91,7 @@
                   padding: 8px;
               }
               h1{
+                
                   text-align: center;
               }
           }
@@ -98,7 +100,7 @@
   
   
   .cont-2{ 
-  
+    
          .title{
              &__top{
              text-align: center;
@@ -133,7 +135,9 @@
 	align-items: center;
 	align-content: center;
     background-color: $seconde-color;
-    margin-top: 8%;
+    position: relative;
+    top: 155px;
+    
     .title{
         margin-top: 10%;
         &__top

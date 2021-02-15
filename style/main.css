@@ -186,7 +186,7 @@ button {
 body .cont-1 .BOX .BOX2 .paragraphe, body .cont-1 .BOX .BOX2 .par1, body .cont-1 .BOX .BOX2 .par2 {
   margin-top: 3%;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 35px;
 }
 
 body .cont-1 span, body .cont-2 .title__top span, body .cont-2 .profils__titles span {
@@ -214,8 +214,6 @@ body .cont-1 .BOX {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   width: 100%;
   margin: 0 auto;
 }
@@ -226,12 +224,11 @@ body .cont-1 .BOX .BOX1 {
 
 body .cont-1 .BOX .BOX1 img {
   width: 100%;
-  margin: -4px 0;
 }
 
 body .cont-1 .BOX .BOX2 {
   width: 45%;
-  padding: 0 5%;
+  padding: 0 4%;
 }
 
 body .cont-1 .BOX .BOX2 .titre {
@@ -240,7 +237,7 @@ body .cont-1 .BOX .BOX2 .titre {
 
 body .cont-1 .BOX .BOX2 h1 {
   font-size: 40px;
-  line-height: 36px;
+  line-height: 45px;
 }
 
 body .cont-1 .BOX .BOX2 .button {
@@ -250,10 +247,10 @@ body .cont-1 .BOX .BOX2 .button {
   color: white;
   padding: 12px 30px;
   font-size: 13px;
-  margin-top: 4%;
+  margin-top: 2%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   body .cont-1 {
     width: 100%;
   }
@@ -313,7 +310,8 @@ body .cont-2 {
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: #f8f8f8;
-  margin-top: 8%;
+  position: relative;
+  top: 155px;
 }
 
 body .cont-2 .title {
