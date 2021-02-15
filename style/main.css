@@ -205,6 +205,8 @@ body {
 body .cont-1 {
   width: 80%;
   margin: 0 auto;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
 }
 
 body .cont-1 .BOX {
