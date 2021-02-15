@@ -205,8 +205,6 @@
 	align-items: center;
 	align-content: center;
     position:relative;
-
-
    }
 
    &__image
@@ -219,13 +217,13 @@
 
         &:before{
             content : "60 x 60";
-        }  
-        &--test{
-            display: none;     
+        }
+       
+       
    }
 }
 
 }
 
+
 }
-  }
