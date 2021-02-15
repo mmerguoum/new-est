@@ -1,1 +1,228 @@
-.
+@mixin button {
+    border-radius: 30px;
+    border: none;
+    background-color: $first-color;
+    color: $white;
+    padding: 12px 30px;
+    font-size: 13px;
+    margin-top: 4%;
+}
+%mrg{
+    margin-top: 3%;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+%span{
+    color: $first-color;
+}
+*{
+    margin:0px  ;
+    padding:0px ;
+    
+ }
+  body{
+    font-family: 'Poppins', sans-serif;
+    .cont-1{
+        width: 80%;
+        margin:0 auto;
+        span{
+            @extend %span;
+        }
+        .BOX{
+            background-color: $seconde-color;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin: 0 auto;
+            // height: 540px;
+            .BOX1{
+                width: 45%;
+                img{
+                    width: 100%;
+                    margin: -4px 0;
+                }
+                
+            }
+            .BOX2{
+                width: 45%;
+                padding:0 5%;
+                
+                .titre{
+                    margin-top: 5%;
+                }
+                h1{
+                    font-size: 40px;
+                    line-height: 36px;
+                    
+                }
+                .paragraphe, .par1, .par2{
+                    @extend %mrg;
+                }
+                
+                .button{
+                    @include button();
+                    
+                }
+            }
+        }
+    }
+
+ 
+
+@media screen and (max-width: 400px){
+    .cont-1{
+        width: 100%; 
+      .BOX{
+          display: flex;
+          flex-direction: column;
+          .BOX1{
+              width: 100%;
+          }
+          .BOX2{
+              width: 100%;
+              padding: 8px;
+              .button{
+                  margin: 4% 10px;
+              }
+              .paragraphe{
+                  padding: 8px;
+              }
+              h1{
+                  text-align: center;
+              }
+          }
+      }
+      }
+  
+  
+  .cont-2{ 
+  
+         .title{
+             &__top{
+             text-align: center;
+         }
+         &__bottom{
+             text-align: center;
+         }
+     }
+     .profils{
+     
+      &--two{
+          display: none;
+       }
+
+       &__image{
+
+        &--test
+        {
+            display: none;
+        }
+       }
+     
+  }
+     
+  } 
+}
+.cont-2{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	align-content: center;
+    background-color: $seconde-color;
+    margin-top: 8%;
+    .title{
+        margin-top: 10%;
+        &__top
+        {
+            font-size: 40px;
+            span{@extend %span;}
+        }
+
+        &__bottom
+        {
+            width: 100%;
+            margin-top: 5%;
+            margin-bottom: 15%;
+            opacity: 40%;
+            text-align: center;
+        }
+    }
+
+    .profils
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    height: 475px;
+    // margin: -275px 0 0 67px;
+    
+    
+   &__one
+    {
+       
+      padding: 18px;
+      align-content: center;
+      background-color: $white;
+      margin: 4%;
+      text-align: center;
+      line-height: 28px;
+       
+            
+   }
+
+
+
+   &__titles
+   {
+       font-size:18px;
+       span{
+           @extend %span;
+       }
+       
+       &--cach{
+
+          font-size: 0.4em;
+       }  
+
+       &--clash{
+        font-size: 0.9em;
+       }
+   }
+
+   &__imgcontainer
+   {
+    width:100%;
+    display:flex;
+    flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    position:relative;
+    
+      
+   }
+
+   &__image
+   { 
+        width:60px;
+        height:60px;
+        border-radius: 50px 50px;
+        bottom:40px;
+        background-color: rgba(119, 119, 119,0.2);
+
+        &:before{
+            content : "60 x 60";
+        }
+   }
+}
+
+}
+
+}
