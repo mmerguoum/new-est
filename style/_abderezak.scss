@@ -1,0 +1,150 @@
+
+@mixin input {
+     display: flex;
+     flex-direction: column;
+     width: 300px;
+     line-height: 2em;
+     text-align: start; }
+ .all-div{
+     width: 80%;
+     margin: 20px auto;
+     text-align: center;
+     &__title{
+          line-height: 0em;
+          font-size: 25px;
+          font-weight: 600;
+          color:$black;
+          span{
+               color:$first-color;}
+     }
+     &__contact{
+          background-color: $first-color;
+          margin: 50px;
+          padding: 25px;
+          border-radius: 10px}
+     .form-control{
+          border-radius: 53px;
+          height: 40px;
+          padding: 1px 21px;
+          color: #6e6c6c;
+          font-size: 13px;
+          border: none;
+          margin-top: 21px;
+          width: 230px;
+          margin-left: 15px;}
+     .form-control1{
+          margin: 0px;
+          width: 80%;
+          height: 100px;
+          border-radius: 8px;
+          margin-top: 30px;}
+     .button{ 
+          border-radius: 30px;
+          border: 2px solid $white;
+          background-color: $first-color;
+          color: $white;
+          padding: 12px 30px;
+          font-size: 13px;
+          font-weight: 700;
+          margin-top: 15px;
+          margin-bottom: 15px;}  
+     &__logo{
+               background-color:#dfdfdf;
+               padding: 30px; 
+               margin-top: 100px;   
+               margin-right: -15px;
+               margin-left: -15px;        
+                    img{
+                         margin-left: 90px;}       
+                    }
+     &__row{
+          background-image: url(../images/fun-facts-bg.jpg);
+          color: $white;
+          display: flex;
+          margin-right: -15px;
+          margin-left: -15px;
+          height: 80%;
+          padding: 20px;
+                    h4{
+                         color: $white;
+                         font-size: 20px;
+                         font-weight: 600;
+                         letter-spacing: 0.25px;
+                         margin-bottom: 35px;}
+                    a{
+                         color: $white;
+                         text-decoration: none;}
+                    &--one{           
+                         width: 300px;
+                         line-height: 2em;
+                         text-align: start;  
+                         &--ico{ 
+                              display: flex;
+                              gap: 15px;
+                              text-align: center;
+                              &--icon{
+                                   background-color:$white;
+                                   border-radius: 50%;
+                                   height: 30px;
+                                   width: 30px;
+                                   justify-content: center;}
+                         }
+                    }
+                    &--two {
+                         @include input ; 
+                         }            
+                    &--three{
+                         @include input ; 
+                         }
+                    &--contact-us{
+                         display: flex;
+                         flex-direction: column;
+                         text-align: start;
+                         .form-control{
+                              margin-bottom: -10px;
+                              background-color: rgb(63, 62, 62);
+                              color: $white;}
+                         .form-control2{
+                              background-color: rgb(63, 62, 62);
+                              color: $white;
+                              border-radius: 12px;
+                              border: 1px solid $black;
+                              width: 263px;
+                              height: 74px;
+                              margin-left: 16px;
+                              margin-top: 21px;}
+                         .button2{
+                              background-color: $first-color;
+                              color:$white;
+                              padding: 10px 28px;
+                              border-radius: 30px;
+                              margin: 25px;
+                              border: 1px solid $black;
+                              width: 150px; }
+                    }    
+          }
+     &__footer{
+               background-color: #343434;
+               color: $white;
+               text-align: center;
+               padding: 25px 0px;;
+               margin-right: -15px;
+               margin-left: -15px;
+               a{
+                    color: $white;
+                    text-decoration: none;  }
+          }
+     }
+ @media (max-width:700px) {   
+     .all-div__logo{
+          :nth-child(1) ,:nth-child(2) ,:nth-child(4) {
+               display: none; } 
+               img{
+                    width: 40%;
+                    height: 80px;
+                    margin-right: 100px; }   
+     }
+     .all-div__row{        
+     flex-wrap: wrap;
+     justify-content: start; }     
+ }
