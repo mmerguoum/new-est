@@ -73,10 +73,10 @@ p{
     font-size: 14px;
     color: #666666;
     line-height: 30px;
-    margin-bottom: 20px;
 }
 }
 button{
+    margin-top: 50px;
     @include button()
     
     
@@ -116,7 +116,8 @@ color: $white;
         margin-left: 10% ;
         margin: right -8%; 
 
-        .box{
+        .boxx{
+            padding: 40px;
             
         background-color:#64646462;
         h3{
