@@ -468,7 +468,7 @@ body .cont-2 .profils__image:before {
   margin-bottom: 15px;
 }
 
-.all-div__logo {
+.all-div .logo {
   background-color: #dfdfdf;
   padding: 30px;
   margin-top: 100px;
@@ -476,7 +476,7 @@ body .cont-2 .profils__image:before {
   margin-left: -15px;
 }
 
-.all-div__logo img {
+.all-div .logo img {
   margin-left: 90px;
 }
 
