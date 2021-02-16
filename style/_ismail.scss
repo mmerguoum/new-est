@@ -26,6 +26,7 @@ $font-family: 'Poppins', sans-serif;
     color: black;
     max-width: 86%;
     margin: 10% auto;
+
     &__financial{
     
         text-align: center;
@@ -42,10 +43,8 @@ $font-family: 'Poppins', sans-serif;
     }
     &__boxs{
         display: flex;
-    
         margin-top : 50px ;
-        
-            
+         
         }
     .items{
      
@@ -144,11 +143,11 @@ color: $white;
 }
 }
 
-
-
 @media screen and (max-width:700px) {
-    
-    .boxs{
+    .services{
+
+        &__boxs{
+
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -157,8 +156,10 @@ color: $white;
             margin-bottom: 10px;
               }
         }
-    
 
+
+    }
+    
 
     .solutions{
         display: flex;
@@ -166,12 +167,12 @@ color: $white;
         padding: 5%;
 
 
-   .textleft{
+   &__textleft{
     
     width: 100%;
     
 }
-    .textright{
+    &__textright{
         margin-top: 50px;
         margin-left: 5%;
         

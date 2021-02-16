@@ -159,7 +159,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  .boxs {
+  .services__boxs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -169,7 +169,7 @@
             flex-direction: column;
     width: 100%;
   }
-  .boxs .items {
+  .services__boxs .items {
     padding-bottom: 10px;
     margin-bottom: 10px;
   }
@@ -183,10 +183,10 @@
             flex-direction: column;
     padding: 5%;
   }
-  .solutions .textleft {
+  .solutions__textleft {
     width: 100%;
   }
-  .solutions .textright {
+  .solutions__textright {
     margin-top: 50px;
     margin-left: 5%;
     width: 80%;
